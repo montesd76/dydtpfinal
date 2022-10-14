@@ -1,0 +1,272 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(185, 226, 191);
+  margin: 0;
+  padding: 0;
+  font-family: 'Pacifico', cursive;
+}
+
+.logo {
+  grid-area: logo;
+  background-color: #43ce4f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  border: 20px; ;
+  
+}
+
+.imagenlogo {
+  height: 140px;
+  width: 140px;
+ 
+ object-fit: contain;
+ }
+
+.header {
+  grid-area: header;
+  background-color: #43ce4f;
+  padding: 5px;
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+
+}
+h2 {
+  font: size 16px;
+  font-family: 'Roboto', sans-serif;
+
+}
+h1 {
+  font: size 16px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #0caa21;
+  text-align: center;
+  text-decoration:underline;
+
+}
+p {
+  font-size: 13px;
+}
+
+.iconos {
+  grid-area: iconos;
+  padding: 10px;
+  background-color: #43ce4f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: rgb(6, 112, 33);
+  display: inline-block;
+  padding: 2px;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  /*font google*/
+}
+
+li {
+  display: inline-block;
+  margin: 5px;
+  padding: 2px;
+  width: 160px;
+  text-align: center;
+}
+
+a:hover {
+  color: rgb(30, 233, 12);
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 40px;
+  
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'logo header header header header iconos'
+    'nav nav nav nav nav nav'
+    'izq izq med med der der'
+    'footer footer footer footer footer footer';
+}
+
+.izq,
+.med,
+.der {
+  padding: 5px;
+  height: max-content
+}
+
+
+.izq {
+  grid-area: izq;
+  text-align: center;
+
+}
+
+
+.med {
+  grid-area: med;
+  text-align: center;
+
+}
+
+
+.der {
+  grid-area: der;
+  text-align: center;
+
+}
+
+
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  padding: 40px;
+  height: max-content;
+}
+
+/*Cajas hombre/mujer*/
+.container{
+  display:flex ;
+  flex-direction: row;
+  width: 100%;
+  
+  
+  
+}
+
+.translate:hover{
+  transform: translate(1px,3px);
+      -webkit-transform: translate(1px,3px);
+      -ms-transform: translate(1px,3px);
+}
+
+.button {
+
+--offset: 1vh;
+--border-size: 0.22vh;
+
+display: block;
+position: relative;
+padding: .5vh 2vw;
+background: transparent;
+color: #2bb83d;
+text-transform: uppercase;
+letter-spacing: .25vh;
+outline: none;
+cursor: pointer;
+font-weight: bold;
+border-radius: 0;
+box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+
+
+
+
+
+}
+
+.caja{
+  border: 1vh solid rgba(112, 216, 159, 0.39);
+  border-style: ridge;
+  padding: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%; 
+  height: 35%;
+  background-color: rgba(239, 243, 241, 0.233);
+ 
+}
+
+.caja1{
+  border: 1vh solid rgba(112, 216, 159, 0.39);
+  border-style: ridge;
+  padding: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%; 
+  height: 35%;
+  background-color: rgba(239, 243, 241, 0.233);
+  
+}
+
+.caja2{
+  border: 1vh solid rgba(112, 216, 159, 0.39);
+  border-style: ridge;
+  padding: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%; 
+  height: 35%;
+  background-color: rgba(239, 243, 241, 0.233);
+}
+
+.caja3{
+  border: 1vh solid rgba(112, 216, 159, 0.39);
+  border-style: ridge;
+  padding: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%; 
+  height: 35%;
+  background-color: rgba(239, 243, 241, 0.233);
+}
+
+.caja4{
+  border: 1vh solid rgba(112, 216, 159, 0.39);
+  border-style: ridge;
+  padding: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%; 
+  height: 35%;
+  background-color: rgba(239, 243, 241, 0.233);
+}
+
+.caja5{
+  border: 1vh solid rgba(112, 216, 159, 0.39);
+  border-style: ridge;
+  padding: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%; 
+  height: 35%;
+  background-color: rgba(239, 243, 241, 0.233);
+}
+
+
+
+
+
+
+
+/*Responsive */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-areas:
+
+      'logo logo logo logo logo logo'
+      'header header header header header header'
+      'iconos iconos iconos iconos iconos iconos'
+      'nav nav nav nav nav nav'
+      'izq izq izq izq izq izq'
+      'med med med med med med'
+      'der der der der der der'
+      'footer footer footer footer footer footer';
+  }
+
+
+
+ 
+}

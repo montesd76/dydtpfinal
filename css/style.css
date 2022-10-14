@@ -101,7 +101,7 @@ a {
   grid-template-areas:
     'logo header header header header iconos'
     'nav nav nav nav nav nav'
-    'izq izq med med der der'
+    'med med med med med med'
     'footer footer footer footer footer footer';
 }
 
@@ -109,7 +109,7 @@ a {
 .med,
 .der {
   padding: 5px;
-  height: max-content
+  
 }
 
 
@@ -123,6 +123,7 @@ a {
 .med {
   grid-area: med;
   text-align: center;
+  height:100%;
 
 }
 
@@ -143,6 +144,24 @@ a {
   height: max-content;
 }
 
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.embed-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  }
+  
 /*Cajas hombre/mujer*/
 .container{
   display:flex ;

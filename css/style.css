@@ -370,7 +370,7 @@ transition:  all 300ms ease;
 form {
   width: 450px;
   margin: auto;
-  background-color: green;
+  background-color: rgb(153, 202, 153);
   padding: 10px 20px;
   box-sizing: border-box;
   margin-top: 20px;
@@ -385,16 +385,16 @@ padding: 7px;
 box-sizing: border-box;
 font-size: 17px;
 border: none;
-background-color: greenyellow;
+background-color: rgb(210, 231, 178);
 }
 textarea { 
   min-height: 100px;
   max-height: 200px;
   max-width: 100%;
-  background-color: greenyellow;
+  background-color: rgb(184, 202, 156);
 }
 #button {
-  background-color: greenyellow;
+  background-color: rgb(181, 196, 158);
   padding: 20px;
   color:black;
 }

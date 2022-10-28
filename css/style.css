@@ -128,7 +128,7 @@ a {
 .med {
   grid-area: med;
   text-align: center;
-  height:100%;
+  
 
 }
 
@@ -274,99 +274,7 @@ box-shadow: inset 0 0 0 var(--border-size) currentcolor;
   background-color: rgba(239, 243, 241, 0.233);
 }
 
-
-
-
-
-/*Responsive */
-@media (max-width: 600px) {
-  .grid-container {
-    grid-template-areas:
-
-      'logo logo logo logo logo logo'
-      'header header header header header header'
-      'iconos iconos iconos iconos iconos iconos'
-      'nav nav nav nav nav nav'
-      'izq izq izq izq izq izq'
-      'med med med med med med'
-      'der der der der der der'
-      'footer footer footer footer footer footer';
-  }
-}
-/* Style the footer */
-
-.pie-pagina {
-  width: 100%;
-  position: fixed;
-  background-color: #0a141d;
-}
-.pie-pagina .grupo-1 {
-width: 100%;
-max-width: 1200px;
-margin: auto;
-display: grid;
-grid-template-columns: repeat(3,1fr);
-grid-gap: 50px;
-padding: 45px 0px;
-
-
-
-}
-.pie-pagina .grupo-1  .box figure {
-  display: inline-block;
-  text-decoration: none;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  color: #fff;
-  margin-right: 10 px;
-  background-color: #0d2033;
-  text-align: left;
-  transition:  all 300ms ease;
-
-
-}
-.pie-pagina .grupo-1 .contactos a {
-  display: inline-block;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  color:#0a141d;
-  margin-right: 10 px;
-  background-color:green ;
-  text-align:center;
-  transition:  all 300ms ease;
-  border-radius: 50px;
-  }
-
-
-.pie-pagina .grupo-1  .box h2 {
-color: #fff;
-margin-bottom: 25px;
-font-size: 20px;
-font-family: Arial, Helvetica, sans-serif;
-
-}
-.pie-pagina .grupo-1  .box p {
-color:#efefef;
-margin-bottom: 10px;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 20px;
-}  
-.pie-pagina .grupo-1 .red-social a {
-display: inline-block;
-text-decoration: none;
-width: 40px;
-height: 40px;
-line-height: 45px;
-color:#0a141d;
-margin-right: 0 8px;
-border-radius: 50px;
-background-color:green;
-text-align:center;
-transition:  all 300ms ease;
-}
+/*CONTACTO*/
 form {
   width: 450px;
   margin: auto;
@@ -405,14 +313,118 @@ textarea {
 
 
 
+/*Responsive */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-areas:
+
+      'logo logo logo logo logo logo'
+      'header header header header header header'
+      'iconos iconos iconos iconos iconos iconos'
+      'nav nav nav nav nav nav'
+      'izq izq izq izq izq izq'
+      'med med med med med med'
+      'der der der der der der'
+      'footer footer footer footer footer footer';
+  }
+}
+/* Style the footer */
+
+.pie-pagina {
+  width: 100%;
+  background-color: #0a141d;
+}
+.pie-pagina .grupo-1 {
+width: 100%;
+max-width: 1200px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap: 40px;
+padding: 45px 0px;
+
+
+
+}
+.pie-pagina .grupo-1  .box figure {
+  display: inline-block;
+  text-decoration: none;
+  width: 20px;
+  height: 20px;
+  line-height: 30px;
+  color: #fff;
+  margin-right: 10 px;
+  background-color: #0d2033;
+  text-align: center;
+  transition:  all 300ms ease;
+
+
+}
+
+
+
+.pie-pagina .grupo-1 .contactos a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color:#0a141d;
+  margin-right: 5px;
+  background-color:green ;
+  text-align:center;
+  transition:  all 300ms ease;
+  border-radius: 50px;
+  }
+
+
+.pie-pagina .grupo-1  .box h2 {
+color: #fff;
+margin-bottom: 15px;
+font-size: 15px;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.pie-pagina .grupo-1  .box p {
+color:#efefef;
+margin-bottom: 10px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 17px;
+}  
+.pie-pagina .grupo-1 .red-social a {
+display: inline;
+text-decoration: none;
+width: 40px;
+height: 40px;
+line-height: 45px;
+color:#0a141d;
+margin-right:  8px ;
+border-radius: 50px;
+background-color:green;
+text-align:center;
+transition:  all 300ms ease;
+float: left;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center
+}
+
+li {
+
+  float: left;
+  margin-right: 10px;
+  padding: 0 4px;
+}
+
+
 
 .pie-pagina .grupo-2 {
 background-color: #0a1a2a;
-padding: 15px 10px;
+padding: 10px 10px;
 text-align: center;
 color: #ffff;
-
-
 
 
 }
@@ -433,10 +445,10 @@ color: aqua;
   .pie-pagina .grupo-1 {
     width: 90%;
     grid-template-columns: repeat(1,1fr);
-    grid-gap: 30vw;
-    padding: 35vw 0vw;
+    grid-gap: 20vw;
+    padding: 25vw 0vw;
     
 
  }
 
- 
+}
